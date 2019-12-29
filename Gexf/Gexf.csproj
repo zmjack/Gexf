@@ -2,10 +2,26 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>zmjack</Authors>
+    <Version>0.0.1</Version>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <Description>Gexf file content builder.</Description>
+    <Copyright>Copyright © dawnx.net 2019-2020</Copyright>
+    <PackageProjectUrl>https://github.com/zmjack/Gexf.git</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/zmjack/Gexf.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Gexf</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="NStandard" Version="0.0.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
