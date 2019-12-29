@@ -6,10 +6,8 @@ namespace Gexf
 {
     public class GraphNode<TNodeAttrModel> where TNodeAttrModel : class, new()
     {
-        public readonly TNodeAttrModel Attvalues = new TNodeAttrModel();
+        public TNodeAttrModel Attvalues = new TNodeAttrModel();
 
-        public GraphNode(int id, string label = null) : this(id.ToString(), label) { }
-        public GraphNode(Guid id, string label = null) : this(id.ToString(), label) { }
         public GraphNode(string id, string label = null)
         {
             Id = id;
@@ -18,6 +16,7 @@ namespace Gexf
 
         public string Id { get; set; }
         public string Label { get; set; }
+        public string Interval { get; set; }
 
         public double Size { get; set; }
         public VizPosition Position { get; set; }

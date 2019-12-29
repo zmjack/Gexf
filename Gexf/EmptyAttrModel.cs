@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Gexf
 {
-    public class EmptyClass
+    public class EmptyAttrModel
     {
     }
 }
